@@ -1,0 +1,38 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
