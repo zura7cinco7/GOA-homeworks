@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.apple-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    50% { width: 80%; }
+    100% { width: 100%; }
+}
