@@ -1,0 +1,86 @@
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 600px;
+}
+.card img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.card .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.card .header h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card .header p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.card p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+.purple {
+    background-color: #6b21a8;
+    color: white;
+}
+.dark-gray {
+    background-color: #1f2937;
+    color: white;
+}
+.light-gray {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+.white {
+    background-color: white;
+    color: #1f2937;
+}
+.black {
+    background-color: #111827;
+    color: white;
+}
+
+.white{
+    border: 2px solid;
+    height: 1000px;
+}
