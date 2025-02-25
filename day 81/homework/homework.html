@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ობიექტების მანიპულაცია</title>
+</head>
+<body>
+
+    <h2>JavaScript ობიექტების მაგალითი</h2>
+    <p id="output"></p>
+
+    <script>
+
+        let me = {
+            name: "ზურია",
+            surname: "ცინცაძე სიმონ",
+            age: 25
+        };
+
+        let familyMember = {
+            name: "ზურაბა",
+            surname: "ცინცაძე სიმონ",
+            age: 50
+        };
+
+        console.log(me);
+        console.log(familyMember);
+        console.log("ჩემი სახელი:", me.name);
+        console.log("ოჯახის წევრის ასაკი:", familyMember.age);
+
+        me.age = 26;
+        familyMember.surname = "ბერიძე";
+        console.log("ჩემი განახლებული ასაკი:", me.age);
+        console.log("ოჯახის წევრის განახლებული გვარი:", familyMember.surname);
+
+        me.city = "ბათუმი";
+        familyMember.occupation = "მასწავლებელი";
+        console.log("ჩემი ქალაქი:", me.city);
+        console.log("ოჯახის წევრის პროფესია:", familyMember.occupation);
+
+        delete me.surname;
+        delete familyMember.age;
+        console.log("ჩემი განახლებული ობიექტი:", me);
+        console.log("ოჯახის წევრის განახლებული ობიექტი:", familyMember);
+
+    </script>
+
+</body>
+</html>
