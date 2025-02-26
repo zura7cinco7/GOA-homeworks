@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter</title>
+    </head>
+    <body>
+        <p id="count">Count: 0</p>
+        <button id="increment-btn">Count ++</button>
+        <button id="decrement-btn">Count --</button>
+        <script>
+            const p = document.getElementById("count");
+            const incrementBtn = document.getElementById("increment-btn");
+            const decrementBtn = document.getElementById("decrement-btn");
+
+            let count = 0;
+
+            function increment() {
+                count++;
+                p.textContent = `Count: ${count}`;
+            }
+
+            function decrement() {
+                count--;
+                p.textContent = `Count: ${count}`;
+            }
+
+            incrementBtn.onclick = increment;
+            decrementBtn.onclick = decrement;
+        </script>
+    </body>
+</html>
