@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zurias saiti</title>
+</head>
+<body>
+    
+    <script>
+        const age = prompt("შეიყვანეთ ასაკი:");
+
+        age > 18 ? console.log("დიდი ხართ.") : console.log("არ ხართ დიდი");
+
+//აი მეორე დავალება
+
+        let username = prompt("შეიყვანეთ თქვენი სახელი:");
+
+        let password = prompt("შეიყვანეთ პაროლი:");
+
+        password.length < 4 ? console.log("პატარაა") : console.log("ზდაროვა");
+
+//მესამეა
+
+        let Weather = "მზიანი ბათუმი";   
+
+        switch (Weather) {
+            case "მზიანი ბათუმი":
+                console.log("ვივარჯიშებ ბათუმში");
+                break;
+            case "წვიმიანი ბათუმი":
+                console.log("კომპიუტერთან საიტს შევქმნი");
+                break;
+            case "ქარიანი ბათუმი":
+                console.log("კინოს ვუყურებ სახლში");
+                 break;
+             case "თოვლიანი ბათუმი":
+                console.log("თხილამურებით ვისრიალებ ბათუმში");
+                 break;
+            default:
+                console.log("დავრჩები სახლში");
+                break;
+        }  
+
+    </script>
+</body>
+</html>
