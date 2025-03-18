@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ანიმაცია</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 50px auto;
+            animation: moveBox 4s infinite;
+        }
+
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+                background-color: #3498db; 
+            }
+            50% {
+                transform: translateX(200px);
+                background-color: #e74c3c; 
+            }
+            100% {
+                transform: translateX(0);
+                background-color: #3498db;
+            }
+        }
+
+        .linear {
+            animation-timing-function: linear;
+        }
+
+        .ease {
+            animation-timing-function: ease;
+        }
+
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box linear"></div>
+    <div class="box ease" style="animation-delay: 1s;"></div>
+    <div class="box ease-in" style="animation-delay: 2s;"></div>
+    <div class="box ease-out" style="animation-delay: 3s;"></div>
+    <div class="box ease-in-out" style="animation-delay: 4s;"></div>
+</body>
+</html>

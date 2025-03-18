@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რიცხვის თამაში</title>
+</head>
+<body>
+
+    <h1>მოცემულ თამაშში 1-დან 10-ის ჩათვლით უნდა გამოიცნოთ რიცხვი!</h1>
+    <label for="guess">შეიტანეთ რიცხვი (1-დან 10-მდე):</label>
+    <input type="number" id="guess" min="1" max="10">
+    <button onclick="checkGuess()">შემოწმება</button>
+
+    <script>
+        const randomNumber = Math.round(Math.random() * 9) + 1; 
+
+        function checkGuess() {
+            const userGuess = document.getElementById("guess").value;
+
+            if (parseInt(userGuess) === randomNumber) {
+                console.log("You win");
+            } else {
+                console.log("You lose");
+            }
+        }
+    </script>
+
+</body>
+</html>

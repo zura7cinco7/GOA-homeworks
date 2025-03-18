@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow ფუნქცია</title>
+</head>
+<body>
+
+    <script>
+
+        const findEvenNumbers = (num) => {
+            let evenNumbers = []; 
+            for (let i = 0; i <= num; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers.push(i); 
+                }
+            }
+            return evenNumbers; 
+        };
+
+        console.log(findEvenNumbers(10)); 
+    </script>
+
+</body>
+</html>

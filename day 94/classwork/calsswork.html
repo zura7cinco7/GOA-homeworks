@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function zuka(num) {
+            let evenNumbers = [];
+            for (let i = 0; i <= num; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers.push(i);
+                }
+            }
+            return evenNumbers;
+        }
+        console.log(zuka(10));
+
+
+        function zuria(zuria1) {
+            let zukaa = 0;
+            for (let i = 0; i < zuria1.length; i += 2) {
+                zukaa += zuria1[i];
+            }
+                return zukaa;
+        }
+
+        function findLongestString(zukaaa) {
+            let zuriaaa = "";
+            for (let str of zukaaa) {
+                if (str.length > zuriaaa.length) {
+                    zuriaaa = str;
+                }
+            }
+            return zuriaaa;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+        .card {
+            background: white;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .price {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #d32f2f;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .details div {
+            text-align: center;
+        }
+        .read-more {
+            display: block;
+            padding: 10px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+        .read-more:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://via.placeholder.com/320x200" alt="Car Image">
+        <div class="price">$200</div>
+        <div class="card-content">
+            <p class="title">AG MC Ford Raptor</p>
+            <div class="details">
+                <div>
+                    <span>&#128663;</span>
+                    <p>2010</p>
+                </div>
+                <div>
+                    <span>&#128678;</span>
+                    <p>4567</p>
+                </div>
+                <div>
+                    <span>&#128663;</span>
+                    <p>200</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="read-more">READ MORE &raquo;</a>
+    </div>
+</body>
+</html>

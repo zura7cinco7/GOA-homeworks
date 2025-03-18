@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფუნქციები და ცვლადები</title>
+</head>
+<body>
+
+    <script>
+        function parentFunction() {
+            let parentVariable = "მშობელი ცვლადი"; 
+
+            function childFunction() {
+                let childVariable = "შვილი ცვლადი"; 
+                console.log(childVariable); 
+                console.log(parentVariable); 
+            }
+
+            childFunction(); 
+        }
+
+        parentFunction(); 
+    </script>
+
+</body>
+</html>

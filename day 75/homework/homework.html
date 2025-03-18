@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Div</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .animated-box {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+        .animated-box:hover {
+            transform: scale(1.5) rotate(360deg);
+            background: red;
+        }
+        /* Additional Creative Animations */
+        .bounce {
+            width: 100px;
+            height: 100px;
+            background: green;
+            border-radius: 50%;
+            animation: bounce 2s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+        .fade-in-out {
+            width: 150px;
+            height: 150px;
+            background: purple;
+            animation: fade 3s infinite alternate;
+        }
+        @keyframes fade {
+            from { opacity: 1; }
+            to { opacity: 0.2; }
+        }
+        .slide {
+            width: 120px;
+            height: 120px;
+            background: orange;
+            animation: slide 3s infinite alternate;
+        }
+        @keyframes slide {
+            from { transform: translateX(-50px); }
+            to { transform: translateX(50px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box">Hover Me</div>
+    <div class="bounce"></div>
+    <div class="fade-in-out"></div>
+    <div class="slide"></div>
+</body>
+</html>

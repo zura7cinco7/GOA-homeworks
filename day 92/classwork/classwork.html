@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ფუნქციები</title>
+</head>
+<body>
+
+    <h1>JavaScript ფუნქციები</h1>
+
+    <script>
+        const findEvenNumbers = (num) => {
+            let evenNumbers = []; 
+            for (let i = 0; i <= num; i++) {
+                if (i % 2 === 0) { 
+                    evenNumbers.push(i);
+                }
+            }
+            return evenNumbers; 
+        };
+        console.log(findEvenNumbers(10));
+
+        const sumEvenIndexedNumbers = (arr) => {
+            let sum = 0; 
+            for (let i = 0; i < arr.length; i++) {
+                if (i % 2 === 0) {  
+                    sum += arr[i]; 
+                }
+            }
+            return sum; 
+        };
+        console.log(sumEvenIndexedNumbers([1, 2, 3, 4, 5, 6]));  
+
+        const findLongestString = (arr) => {
+            let longest = '';
+            for (let str of arr) {
+                if (str.length > longest.length) {  
+                    longest = str;  
+                }
+            }
+            return longest; 
+        };
+        console.log(findLongestString(['apple', 'banana', 'cherry', 'kiwi']));
+
+        for (let i = 5; i >= 0; i--) {
+            console.log(i); 
+        }
+    </script>
+
+</body>
+</html>
