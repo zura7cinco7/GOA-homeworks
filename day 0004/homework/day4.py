@@ -1,7 +1,3 @@
-#print("zura") + print("tsintsadze") 
-
-#კოდი არასწორია რადგან ჩვენ შეგვიძლია ამ შემთხვევაში ერთ პრინტის გამოყენებით დავწეროთ ორივე მაგალითად
-#მაგალითი
 print("zura tsintsadze") 
 
 print(5 * 8)
@@ -43,18 +39,3 @@ print( 999 / 333)
 print( 9999 / 3333)
 
 print( 99999 / 33333)
-
-
-#დაწერე შენი ოჯახის წევრების ასაკი და შეკრიბე <3
-
-father_age = 48
-
-mother_age = 46
-
-sister_age = 24
-
-second_sister_age = 22
-
-print(father_age + mother_age + sister_age + second_sister_age)
-
-print ("<3")

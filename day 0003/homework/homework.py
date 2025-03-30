@@ -1,4 +1,3 @@
-
 num1 = 0
 while num1 < 10:
     num1 = num1 + 1
@@ -19,10 +18,3 @@ while num3 < 100:
     num3 = num3 + 5
     print(num3)
     
-
-
-
-password = input("enter your password:")
-while password != "goa 123":
-    password=input("enter your password:")
-

@@ -4,16 +4,3 @@ print ("your name username or age is" + " " + str(name_or_username_or_age) ) #�
 your_home_number_or_email = input("your home number or email:")
 print("your home nameber or email is" + " " + str(your_home_number_or_email))
 
-
-
-
-your_age_ = input("yor age :")
-print ("your age is " + " " + str(your_age_))
-
-#მომხმარებლის ასაკია 24 და უნდ ვუთხრათ რამდენის იქნება ის 20 წელში ამიტომ მის ასაკს უნდა მივუმატოთ 20
-
-age = 24
-
-print(age + 20)
- 
-print("your age 20 yers ago is 44")
