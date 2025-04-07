@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            button:hover {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="sumNumbers()">გამოთვალე ჯამი</button>
+        <p id="sumResult"></p>
+        <button onclick="getFavoriteMovies()">ჩაწერე საყვარელი ფილმები</button>
+        <ul id="moviesList"></ul>
+        <button onclick="addTask()">Add Task</button>
+        <ul id="tasksList"></ul>
+
+        <script>
+            function sumNumbers() {
+                const num1 = parseInt(prompt("გთხოვთ, ჩაწეროთ პირველი რიცხვი"));
+                const num2 = parseInt(prompt("გთხოვთ, ჩაწეროთ მეორე რიცხვი"));
+
+                const sum = num1 + num2;
+
+                document.getElementById("sumResult").innerText = `${num1} + ${num2} = ${sum}`;
+            }
+
+            function getFavoriteMovies() {
+                let movies = [];
+
+                for (let i = 0; i < 5; i++) {
+                    let movie = prompt(`ჩაწერეთ საყვარელი ფილმი #${i + 1}`);
+                    movies.push(movie);
+                }
+
+                movies.sort();
+
+                const movieList = document.getElementById("moviesList");
+                movieList.innerHTML = '';
+                movies.forEach(movie => {
+                    let li = document.createElement('li');
+                    li.innerText = movie;
+                    movieList.appendChild(li);
+                });
+            }
+
+            function addTask() {
+                const task = prompt("ჩაწერეთ თქვენი ახალი დავალება:");
+
+                if (task) {
+                    const li = document.createElement('li');
+                    li.innerText = task;
+
+                    const deleteButton = document.createElement('button');
+                    deleteButton.innerText = "Delete";
+                    deleteButton.onclick = function() {
+                        li.remove(); 
+                    };
+
+                    li.appendChild(deleteButton);
+                    document.getElementById("tasksList").appendChild(li);
+                }
+            }
+        </script>
+
+    </body>
+</html>

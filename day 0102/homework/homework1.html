@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text</title>
+</head>
+<body>
+
+    <div class="myClass">Element 1</div>
+    <div class="myClass">Element 2</div>
+    <div class="myClass">Element 3</div>
+
+    <script>
+        let elements = document.getElementsByClassName("myClass");
+
+        elements[1].innerText = "Modified Element 2";
+    </script>
+
+</body>
+</html>

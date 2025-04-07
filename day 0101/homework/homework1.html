@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            button:hover {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="ul-1">
+            <!-- აქ დაამატებს JavaScript ღილაკებს -->
+        </ul>
+
+        <script>
+            const texts = ["პური", "შაქარი", "რძე", "10ც კვერცხი", "ხორცი"];
+            
+            function addItemsToList() {
+                const myUl = document.getElementById("ul-1");
+
+                texts.forEach(curValue => {
+                    const li = document.createElement("li"); 
+                    li.textContent = curValue; 
+                    myUl.appendChild(li); 
+                });
+
+                const button = document.createElement("button");
+                button.innerText = "Click Me";
+                myUl.appendChild(button);
+            }
+
+            window.onload = addItemsToList;
+        </script>
+    </body>
+</html>

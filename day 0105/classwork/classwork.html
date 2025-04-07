@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph Manipulation</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="para1">ეს არის პირველი პარაგრაფი</p>
+  <p id="para2">ეს არის მეორე პარაგრაფი</p>
+  <p id="para3">ეს არის მესამე პარაგრაფი</p>
+
+  <script>
+    const firstP = document.getElementById("para1");
+    firstP.textContent = "პირველი პარაგრაფის ტექსტი შეიცვალა";
+    firstP.id = "updatedPara1";
+
+    const secondP = document.getElementById("para2");
+    secondP.className = "highlight";
+    secondP.style.backgroundColor = "lightblue";
+
+    const thirdP = document.getElementById("para3");
+    thirdP.innerHTML = 'ეს არის მესამე პარაგრაფი <b>სხვა ტექსტით</b>';
+  </script>
+
+</body>
+</html>

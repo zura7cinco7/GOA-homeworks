@@ -1,0 +1,14 @@
+<script>
+    function queryWord(selector) {
+      return document.querySelector(selector);
+    }
+  
+    const idEl = queryWord("#myDiv");
+    const classEl = queryWord(".myClass");
+    const tagEl = queryWord("span");
+  
+    console.log(idEl?.textContent);  
+    console.log(classEl?.textContent);
+    console.log(tagEl?.textContent);
+  </script>
+  

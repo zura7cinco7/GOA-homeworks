@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            button:hover {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="ul-1">
+        </ul>
+
+        <script>
+            function addButtonToList() {
+                const ul = document.getElementById("ul-1");
+
+                const button = document.createElement("button");
+                button.innerText = "Click Me"; 
+
+                ul.appendChild(button);
+            }
+
+            window.onload = addButtonToList;
+        </script>
+    </body>
+</html>

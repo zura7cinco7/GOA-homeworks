@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph Example</title>
+</head>
+<body>
+
+  <p>This is paragraph 1</p>
+  <p>This is paragraph 2</p>
+  <p>This is paragraph 3</p>
+  <p>This is paragraph 4</p>
+  <p>This is paragraph 5</p>
+
+  <script>
+    const paragraphs = document.getElementsByTagName("p");
+    for (let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].textContent = `Modified paragraph ${i + 1}`;
+    }
+  </script>
+
+</body>
+</html>
