@@ -4,7 +4,6 @@ def sentence_to_list(sentence):
     return words
 
 def list_to_sentence(word_list):
-    # სიტყვის სიას ვაქცევთ წინადადებად, სიტყვებს შორის ", " (დაშორებით)
     return ', '.join(word_list)
 
 # მაგალითი
